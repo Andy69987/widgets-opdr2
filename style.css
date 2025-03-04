@@ -1,0 +1,78 @@
+
+:root {
+    --primary-color: rgba(48, 0, 77, 0.8);
+    --secondary-color: rgba(78, 0, 126, 0.8);
+    --background: #121212;
+    --widget-bg: #292929;
+    --text-color: #ddd;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--background);
+    color: var(--text-color);
+    text-align: center;
+    margin: 0;
+}
+
+
+header {
+    padding: 2rem;
+    background: var(--primary-color);
+    color: white;
+    font-size: 2.4rem;
+}
+
+
+.widgets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem;
+}
+
+
+.widget {
+    background: var(--widget-bg);
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 30rem;
+    text-align: center;
+    box-shadow: 0 4px 10px var(--primary-color);
+}
+
+
+button {
+    font-size: 1.6rem;
+    padding: 1rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background: var(--secondary-color);
+}
+
+
+#fontSlider {
+    width: 80%;
+    margin-top: 1rem;
+}
+
+
+#dynamicImg {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+}
