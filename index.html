@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opdracht 2 - Widgets</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
@@ -13,31 +13,28 @@
     
     <main>
         <section class="widgets">
-            
             <div class="widget" id="widget1">
                 <h2>Stopwatch</h2>
                 <p id="stopwatch">00:00:00</p>
-                <button onclick="toggleStopwatch()">Start/Stop</button>
-                <button onclick="resetStopwatch()">Reset</button>
+                <button id="startStopBtn">Start/Stop</button>
+                <button id="resetBtn">Reset</button>
             </div>
 
-            
             <div class="widget" id="widget2">
                 <h2>Font Size Slider</h2>
-                <input type="range" id="fontSlider" min="10" max="50" value="16">
-                <h2 id="sliderValue">16px</h2>
+                <input type="range" id="fontSlider" min="1" max="3" step="0.1" value="1.6">
+                <h2 id="sliderValue">1.6rem</h2>
             </div>
 
-            
             <div class="widget" id="widget3">
                 <h2>Dynamische Content</h2>
-                <img id="dynamicImg" src="" alt="Dynamische afbeelding">
+                <img id="dynamicImg" src="img/images.jpg" alt="Dynamische afbeelding">
                 <p id="dynamicText"></p>
-                <button onclick="loadDynamicContent()">Laad Content</button>
+                <button id="loadContentBtn">Laad Content</button>
             </div>
         </section>
     </main>
     
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

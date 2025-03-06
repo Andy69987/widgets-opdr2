@@ -1,12 +1,11 @@
-
 :root {
     --primary-color: rgba(48, 0, 77, 0.8);
     --secondary-color: rgba(78, 0, 126, 0.8);
     --background: #121212;
     --widget-bg: #292929;
     --text-color: #ddd;
+    --base-font-size: 1.6X;
 }
-
 
 html {
     font-size: 62.5%;
@@ -18,8 +17,8 @@ body {
     color: var(--text-color);
     text-align: center;
     margin: 0;
+    font-size: var(--base-font-size);
 }
-
 
 header {
     padding: 2rem;
@@ -27,7 +26,6 @@ header {
     color: white;
     font-size: 2.4rem;
 }
-
 
 .widgets {
     display: flex;
@@ -37,7 +35,6 @@ header {
     padding: 4rem;
 }
 
-
 .widget {
     background: var(--widget-bg);
     padding: 2rem;
@@ -46,7 +43,6 @@ header {
     text-align: center;
     box-shadow: 0 4px 10px var(--primary-color);
 }
-
 
 button {
     font-size: 1.6rem;
@@ -63,12 +59,10 @@ button:hover {
     background: var(--secondary-color);
 }
 
-
 #fontSlider {
     width: 80%;
     margin-top: 1rem;
 }
-
 
 #dynamicImg {
     width: 100%;
